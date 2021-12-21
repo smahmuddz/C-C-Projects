@@ -1,3 +1,10 @@
+/*
+1. Using C program, randomly generate an undirected graph represented by adjacency matrix
+with n = 1000 vertices.
+2. Determine number of edges in the graph. Determine degrees of all vertices. Show that
+Handshaking logic holds. Determine computational time in this step (except printing time) in
+ns.
+*/
 #include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
