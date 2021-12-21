@@ -1,3 +1,10 @@
+/*
+1. Using C program, randomly generate a directed graph represented by adjacency matrix with
+n = 1000 vertices.
+2. Determine in-degrees and out-degrees of all vertices and show that sum of in-degrees and
+sum of out-degrees are equal. Determine computational time in this step (except printing
+time) in ns.
+*/
 #include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
