@@ -3,13 +3,13 @@
 n = 1000 vertices.
 2. Determine in-degrees and out-degrees of all vertices and show that sum of in-degrees and
 sum of out-degrees are equal. Determine computational time in this step (except printing
-time) in ns.
+time) in ms.
 */
 #include<stdio.h>
 #include<time.h>
+#include<math.h>
 #include<stdlib.h>
 #define max 9001
-
 int adj_mat[max][max];
 int main()
 {
@@ -19,7 +19,7 @@ int main()
     clock_t start,end;
 
     srand(2);
-    printf("Enter the number of vertices :\n");
+    printf("Enter the number of Vertices:\n");
     scanf("%d",&n);
     printf("\n");
 
@@ -29,11 +29,11 @@ int main()
         {
         for(j=0; j<n; j++)
         {
-            if(i!=j)
+          if(i!=j)
          {adj_mat[i][j] = rand()%2;}
         }
         }
- for(i=0; i<n; i++)
+   for(i=0; i<n; i++)
     {
         for(j=0; j<n; j++)
         {
@@ -69,10 +69,8 @@ int main()
     printf("\n  The total out degree is : %d\n",outdeg);
 
 
-    total_time=((double)(end-start)/CLOCKS_PER_SEC)*pow(10,9);
-
-     printf("\n  Execution time is : %1f ns \n",total_time);
+    total_time=((double)(end-start)/CLOCKS_PER_SEC)*pow(10,3);
+     printf("\n  Execution time is : %1f ms \n",total_time);
      printf("\n");
-
      return 0;
 }
