@@ -1,6 +1,7 @@
 # Optimal polygon triangulation
 
 - **Code Explanation:**
+---
 
 1. **`#include<bits/stdc++.h>`** is a C++ preprocessor directive that tells the compiler to include a standard C++ library called **`bits/stdc++.h`**. This library includes a large number of C++ standard library headers, including **`iostream`** and **`cmath`**, which are needed in this program.
 2. **`#include<iostream>`** is a C++ preprocessor directive that tells the compiler to include the **`iostream`** library, which provides input/output stream objects.
@@ -37,9 +38,9 @@
 19. The loop at line 21 iterates over all possible combinations of points and calculates the minimum length of a triangle that can be formed from those points. The minimum values are stored in the **`dp`** array for future reference.
 20. **`cout << dp[0][n-1] << endl;`** is a line of code that prints the value of the element at index **`[0][n-1]`** in the **`dp`** array to the standard output stream, followed by a newline character. This value represents the minimum length of a triangle that can be formed from the entire set of points.
 21. **`return 0;`** is a line of code that indicates the end of the **`main`** function and returns a value of 0 to the operating system, indicating that the program executed successfully.
-
+---
 - **Use of Dynamic Programming:**
-
+---
 Dynamic programming (DP) is a method of solving problems by breaking them down into smaller subproblems, solving each subproblem, and then combining the solutions to the subproblems to obtain a solution to the original problem.
 
 In this program, dynamic programming is used to calculate the minimum length of a triangle that can be formed from a given set of points. The problem is solved by storing the results of previously solved subproblems in an array and using these results to solve larger subproblems.
