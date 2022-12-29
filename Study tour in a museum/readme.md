@@ -1,9 +1,7 @@
 # Study tour in a museum
 
-# Problem Statement
 
-```c
-A museum arranged a day long program for some school children in which students can
+**_A museum arranged a day long program for some school children in which students can
 participate in various activities. In one room, a 3D short movie has been shown and so
 3D glasses are needed. Also, after they have watched the movie, they need to return the
 3D glasses. However, only a limited number of 3D glasses are available. So, all
@@ -15,8 +13,8 @@ synchronizes the activities of the students. The total number of students, the n
 watching the movie, it should terminate. Once all the student threads are terminated, the
 main program should be terminated. Your program should work for any number of
 students and 3D glasses. Allocate memory for data structures dynamically based on the
-input parameter(s).
-```
+input parameter(s)._**
+
 
 # Code Explanation
 
