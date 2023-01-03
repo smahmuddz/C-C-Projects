@@ -15,6 +15,23 @@ main program should be terminated. Your program should work for any number of
 students and 3D glasses. Allocate memory for data structures dynamically based on the
 input parameter(s)._**
 
+## Build And Run
+
+you can build the code by running the following command:
+
+```bash
+gcc -o museum_program museum_program.c -lpthread
+```
+To run the code with input, you can use the following command:
+
+```bash
+./museum_program num_students num_glasses
+```
+Suppose you have 5 students and 3 glasses, you must follow the command:
+```bash
+./museum_program 5 3
+```
+
 
 # Code Explanation
 
