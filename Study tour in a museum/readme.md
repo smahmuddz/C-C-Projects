@@ -17,6 +17,16 @@ input parameter(s)._**
 
 ## Build And Run
 
+First, make sure that you have the required package management tools installed. On a Debian or Ubuntu system, you can use the apt command to install the required tools:
+```bash
+sudo apt update
+sudo apt install build-essential
+```
+Once the package management tools are installed, you can use them to install GCC. On a Debian or Ubuntu system, you can use the apt command to install GCC:
+```bash
+sudo apt update
+sudo apt install gcc
+```
 you can build the code by running the following command:
 
 ```bash
