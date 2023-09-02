@@ -51,12 +51,12 @@ int main()
         {
             if(adj_mat[i][j]==1)
             {
-                indeg++;
-                in++;
-            }
-            if(adj_mat[j][i]==1){
                 outdeg++;
                 out++;
+            }
+            if(adj_mat[j][i]==1){
+                indeg++;
+                in++;
             }
             }
 
