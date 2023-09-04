@@ -29,7 +29,6 @@ int main()
         {
         for(j=0; j<n; j++)
         {
-          if(i!=j)
          {adj_mat[i][j] = rand()%2;}
         }
         }
