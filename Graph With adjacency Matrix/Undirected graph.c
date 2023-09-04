@@ -26,17 +26,13 @@ for(i=0;i<n;i++)
     for(j=0;j<n;j++)
     {
         adj_mat[i][j]=rand()%2;
-        if(adj_mat[i][j]==1&&i!=j)
+        if(adj_mat[i][j]==1)
         {
             adj_mat[j][i]=1;
         }
-        else if(adj_mat[i][j]==0&&i!=j)
+        else(adj_mat[i][j]==0)
         {
             adj_mat[j][i]=0;
-        }
-        else if(i==j)
-        {
-            adj_mat[i][j]=0;
         }
     }
 }
@@ -54,8 +50,10 @@ for(i=0;i<n;i++)
     {
         degree = 0;
         for ( j = 0 ; j < n ; j++ )
-            if ( adj_mat[i][j] == 1)
-                degree++;
+          if(adj_mat[i][j] == 1 && i==j)
+          {degree+=2;}
+           else if ( adj_mat[i][j] == 1)
+           {degree++;}
         printf("\n\n %5d \t\t %d\n\n", i, degree);
     }
 
